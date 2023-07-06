@@ -1,23 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar'
+import Home from './pages/Home'
+import Login from './pages/Login'
+
+import Signup from './pages/Signup'
+import Dashboard from './pages/Dashboard'
+import {Route , Routes }from 'react-router-dom'
+import { useState } from 'react';
+import PrivateRoute from './components/PrivateRoute';
+
 
 function App() {
+
+  const [isLoggedIn , setIsLoggedIn] = useState(false);
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='w-full h-full bg-neutral-900	 flex flex-col'>
+      <Navbar isLoggedIn = {isLoggedIn} setIsLoggedIn = {setIsLoggedIn}></Navbar>
+
+    <Routes>
+
+    <Route path = "/" element = {<Home isLoggedIn = {isLoggedIn}></Home>}></Route>
+    <Route path = "login" element = {<Login setIsLoggedIn = {setIsLoggedIn}></Login>}></Route>
+    <Route path = "signup" element = {<Signup setIsLoggedIn = {setIsLoggedIn}></Signup>}></Route>
+    <Route path = "dashboard" element = {
+    <PrivateRoute isLoggedIn={isLoggedIn}>
+      <Dashboard></Dashboard>
+    </PrivateRoute>
+    }></Route>
+    </Routes>
     </div>
   );
 }
