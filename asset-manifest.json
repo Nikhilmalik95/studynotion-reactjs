@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/studynotion-reactjs/static/css/main.86f7587e.css",
+    "main.js": "/studynotion-reactjs/static/js/main.7176e214.js",
+    "static/media/signup.png": "/studynotion-reactjs/static/media/signup.b431d919de01b6515dd6.png",
+    "static/media/logingirl.png": "/studynotion-reactjs/static/media/logingirl.4d877a447365e5137b67.png",
+    "static/media/welcome.svg": "/studynotion-reactjs/static/media/welcome.e259e86ee31399e8a51111a41e04a33e.svg",
+    "static/media/Homeimg.png": "/studynotion-reactjs/static/media/Homeimg.4ffe1b91cf820df101fa.png",
+    "static/media/loginbackground.png": "/studynotion-reactjs/static/media/loginbackground.3a238e5f26d676376e1d.png",
+    "static/media/dashboardimg.svg": "/studynotion-reactjs/static/media/dashboardimg.fa4b24c3778b5e1f3243ec0e8f68f907.svg",
+    "static/media/logo.svg": "/studynotion-reactjs/static/media/logo.0d90853fa1468dbe2d8d82c0ea06b8b1.svg",
+    "index.html": "/studynotion-reactjs/index.html",
+    "main.86f7587e.css.map": "/studynotion-reactjs/static/css/main.86f7587e.css.map",
+    "main.7176e214.js.map": "/studynotion-reactjs/static/js/main.7176e214.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.86f7587e.css",
+    "static/js/main.7176e214.js"
+  ]
+}
